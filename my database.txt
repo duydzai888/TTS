@@ -1,3 +1,0 @@
-data: wordpress
-user: duy
-pass: 123456
