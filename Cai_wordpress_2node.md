@@ -126,4 +126,3 @@ Tiến hành sửa file: `vi wp-config.php`
 Kiểm tra xem đã cài đặt thành công hay chưa: `http://192.168.73.129/wordpress/`
 
 
-![](/Linux/image/ipv6.png)
