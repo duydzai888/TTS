@@ -48,8 +48,6 @@ systemctl start mariadb
 systemctl enable mariadb
 ```
 
-Sử dụng lệnh `systemctl status httpd` để kiểm tra xem apache đã hoạt động hay chưa.
-
 Thiết lập MariaDB: `mysql_secure_installation`
 ```
 Enter current password for root (enter for none): Nhấn phím Enter
