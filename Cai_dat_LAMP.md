@@ -33,6 +33,14 @@ Sau khi apache được cài đặt thì ta khởi động apache và cho phép 
 systemctl start httpd
 systemctl enable httpd
 ```
+
+Nếu các bạn sử dụng Firewalld để có thể truy cập được website các bạn sẽ cần mở port bằng các lệnh sau đây:
+```
+firewall-cmd --permanent --zone=public --add-service=http
+firewall-cmd --permanent --zone=public --add-service=https
+firewall-cmd --reload
+```
+
 Sử dụng lệnh `systemctl status httpd` để kiểm tra xem apache đã hoạt động hay chưa.
 
 <a name="CaiDatMariaDB"></a>
