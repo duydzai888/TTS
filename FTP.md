@@ -6,7 +6,7 @@
 
 
 ## 1. FTP
-- Khái niệm: [FTP](https://vi.wikipedia.org/wiki/FTP) (File Transfer Protocol) là giao thức truyền tải tập tin được dùng tỏng việc trao đổi dữ liệu qua mạng thông qua [giao thức TCP/IP](https://www.totolink.vn/article/149-mo-hinh-tcp-ip-la-gi-chuc-nang-cua-cac-tang-trong-mo-hinh-tcp-ip.html), thường hoạt động trên 2 cổng là cổng 20 và 21.
+- Khái niệm: [FTP](https://vi.wikipedia.org/wiki/FTP) (File Transfer Protocol) là giao thức truyền tải tập tin được dùng trong việc trao đổi dữ liệu qua mạng thông qua [giao thức TCP/IP](https://www.totolink.vn/article/149-mo-hinh-tcp-ip-la-gi-chuc-nang-cua-cac-tang-trong-mo-hinh-tcp-ip.html), thường hoạt động trên 2 cổng là cổng 20 và 21.
 - Với giao thức FTP, các client trong mạng có thể truy cập đến máy chủ FTP để gửi hoặc lấy dữ liệu. Điểm nổi bật là người dùng có thể truy cập vào máy chủ FTP để truyền và nhận dữ liệu dù đang ở xa.
 
 ### Mô hình hoạt động của giao thức FTP
