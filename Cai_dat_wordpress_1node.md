@@ -41,6 +41,10 @@ Sử dụng lệnh `systemctl status httpd` để kiểm tra xem apache đã ho�
 
 <a name="CaiDatPHP"></a>
 ### 3. Cài đặt gói `php`.
+Để cài đặt kho Remi ta chạy lệnh sau.: `yum install -y yum-utils http://rpms.remirepo.net/enterprise/remi-release-7.rpm`
+
+Sau khi cài đặt gói Remi xong, các bạn cần chọn phiên bản PHP mà mình cần cài đặt và kích hoạt gói chứa phiên bản PHP đó. Ở hướng dẫn này mình sẽ cài đặt PHP 8.0 nên sẽ kích hoạt gói bằng lệnh sau.: `yum-config-manager --enable remi-php80`
+
 Sử dụng `yum` để cài php
 ```
 yum install -y php-mysqlnd
