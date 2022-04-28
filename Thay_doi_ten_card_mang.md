@@ -19,9 +19,9 @@
   ### B1: Chỉnh sửa tham số Kernel boot.
 ```  
     - Truy cập file `/etc/default/grub` với lệnh `vi` để chỉnh sửa
-    - Tìm đến dòng `GRUB_CMDLINE_LINUX` và thêm đoạn `net.ifname=0 biosdevname=0`. 
+    - Tìm đến dòng `GRUB_CMDLINE_LINUX` và thêm đoạn `net.ifnames=0 biosdevname=0`. 
 ```  
-![grub](https://user-images.githubusercontent.com/84270045/165668243-120fa66f-5f87-4c0a-bf94-553b337d2af7.png)
+![grub](https://user-images.githubusercontent.com/84270045/165668944-103b0a35-ed7d-48d6-b7bc-40d01cf2eee1.png)
    
   - Sinh lại tệp `Grub` và ghi đè lên tệp hiện có ta sử dụng lệnh `grub2-mkconfig -o /boot/grub2/grub.cfg`
   - 
