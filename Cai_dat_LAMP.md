@@ -111,3 +111,5 @@ Bây giờ ta khởi động lại dịch vụ Apache bằng lệnh: `systemctl 
 <a name="KiemTraHoatDongWevsite"></a>
 ### 6, Kiểm tra hoạt động website
 Sau khi đã cấu hình hoàn tất Virtual Host và tạo folder website hoàn tất, các bạn kiểm tra nhanh xem website của mình có hoạt động hay không bằng cách tạo thử file `index` bằng lệnh sau: `touch /var/www/azdigi.cf/html/index.html | echo "Cai dat thanh cong LAMP" > /var/www/azdigi.cf/html/index.html`
+
+
