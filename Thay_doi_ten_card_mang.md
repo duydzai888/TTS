@@ -57,3 +57,4 @@
 
 ## 3. Kiểm tra 
 - Sử dụng lệnh `ip a` để kiểm tra
+
