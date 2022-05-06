@@ -12,6 +12,9 @@
 - [1. Đổi do nghi ngờ có người vào](#Centos_doimatkhau)
 - [2. Đổi do quên](#Centos_doquen)
 
+[Tài liệu tham khảo](#Tai_lieu_tham_khao)
+
+
 
 <a name="reset-password-windows"></a>
 ## I. Reset Password Windows.
@@ -120,7 +123,7 @@ reboot
 
 
 
-
+<a name="Tai_lieu_tham_khao"></a>
 ## Tài liệu tham khảo
 - [Centos7](https://www.7host.vn/huong-dan-khoi-phuc-mat-khau-quan-tri-reset-root-password-tren-may-chu-su-dung-he-dieu-hanh-centos/#CentOS_7)
 
