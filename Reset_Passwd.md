@@ -87,7 +87,8 @@ Lưu và khởi động lại: `exec /sbin/itit`
 
 **Thực hiện như với Ubuntu 20**
 
-<a name='Centos_doquen"></a>
+
+<a name="Centos_doquen"></a>
 #### 2. Đổi do quên.
 
 Ta tiến hành khởi động lại Centos7 và khi hiện ra màn hình bên dưới ta nhấn phím `e`.
