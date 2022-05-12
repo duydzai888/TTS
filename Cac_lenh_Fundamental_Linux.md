@@ -51,10 +51,16 @@ adm  cache  crash  db  empty  games  gopher  kerberos  lib  local  lock  log  ma
 ##### 2.3. cd -
 Một phím tắt hữu ích khác với cd là chỉ cần gõ `cd -` để chuyển đến thư mục trước đó.
 ```
-[root@Centos7 www]# pwd
-/var/www
-[root@Centos7 www]# cd -
-/root
+[root@Centos7 ~]# cd /var
+[root@Centos7 var]# ls
+adm  cache  crash  db  empty  games  gopher  kerberos  lib  local  lock  log  mail  nis  opt  preserve  run  spool  tmp  www  yp
+[root@Centos7 var]# cd tmp
+[root@Centos7 tmp]# pwd
+/var/tmp
+[root@Centos7 tmp]# cd -
+/var
+[root@Centos7 var]# pwd
+/var
 ```
 
 #### 3. Đường dẫn tuyệt đối và tương đối.
