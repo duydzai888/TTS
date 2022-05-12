@@ -1,5 +1,5 @@
 # Các câu lệnh Fundamental Linux
-## Menu
+
 
 ### I. Làm việc với thư mục
 Mô-đun này là tổng quan ngắn gọn về các lệnh phổ biến nhất để làm việc với các thư mục: `pwd, cd, ls, mkdir và rmdir`. Các lệnh này có sẵn trên mọi Linux (hoặc Unix) hệ thống.
