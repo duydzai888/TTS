@@ -970,14 +970,350 @@ May 12 17:09:11 Centos7 nm-dispatcher: req:1 'dhcp4-change' [ens33]: new request
 May 12 17:09:11 Centos7 nm-dispatcher: req:1 'dhcp4-change' [ens33]: start running ordered scripts...
 ```
 
+##### 7.3. /var/cache
+Thư mục `/var/cache` có thể chứa dữ liệu bộ nhớ cache cho một số ứng dụng.
+```
+[root@Centos7 ~]# ls /var/cache
+httpd  ldconfig  man  yum
+```
 
+##### 7.4. /var/spool
+Thư mục `/var/spool` thường chứa các thư mục spool cho mail và cron, nhưng cũng có phục vụ như một thư mục mẹ cho các tệp ống đệm khác.
+```
+[root@Centos7 ~]# ls /var/spool
+anacron  cron  lpd  mail  plymouth  postfix
+```
 
+##### 7.5. var/lib
+Thư mục `/var/lib` chứa thông tin trạng thái ứng dụng.
+Ví dụ: Red Hat Enterprise Linux giữ các tệp liên quan đến rpm trong `/var/lib/rpm/`.
+```
+[root@Centos7 ~]# ls /var/lib
+alternatives  dav   dhclient  initramfs  machines  NetworkManager  plymouth  postfix  rpm-state  stateless  tuned
+authconfig    dbus  games     logrotate  misc      os-prober       polkit-1  rpm      rsyslog    systemd    yum
+```
+### V. Shell expansion
+#### 1. Lệnh và tranh luận
+Chương này giới thiệu cho bạn cách mở rộng trình bao bằng cách xem kỹ các lệnh và tranh luận. Biết mở rộng shell là rất quan trọng vì nhiều lệnh trên
+Hệ thống Linux được xử lý và rất có thể bị thay đổi bởi shell trước khi chúng được thực thi.
 
+Giao diện dòng lệnh hoặc trình bao được sử dụng trên hầu hết các hệ thống Linux được gọi là bash, là viết tắt của Bourne lại shell. Vỏ bash kết hợp các tính năng từ `sh` (bản gốc Bourne shell), `csh` (C Shell) và `ksh` (Korn Shell).
 
+Chương này thường sử dụng lệnh `echo` để chứng minh các tính năng của shell. Lệnh `echo` rất đơn giản: nó lặp lại đầu vào mà nó nhận được.
+```
+[root@Centos7 ~]# echo LaiKhanhDuy
+LaiKhanhDuy
+```
 
+##### 1.1. Tranh luận
+Một trong những tính năng chính của `shell` là thực hiện quét dòng lệnh. Khi bạn nhập một lệnh tại dấu nhắc lệnh của trình bao và nhấn phím enter, sau đó trình bao sẽ bắt đầu quét dòng đó, cắt nó thành các đối số. Trong khi quét dòng, shell có thể làm nhiều thay đổi đối với các đối số bạn đã nhập. Quá trình này được gọi là `shell expansion`. Khi trình bao hoàn tất quá trình quét và sửa đổi dòng đó, sau đó nó sẽ được thực thi.
 
+##### 1.2. Loại bỏ khoảng trắng
+Các phần được phân tách bằng một hoặc nhiều khoảng trắng (hoặc tab) liên tiếp được coi là các đối số riêng biệt, mọi khoảng trắng bị xóa. Đối số đầu tiên là lệnh được thực thi, các đối số khác được cấp cho lệnh. Shell cắt của bạn một cách hiệu quả lệnh vào một hoặc nhiều đối số.
+```
+[root@Centos7 ~]# echo Lai Duy
+Lai Duy
+[root@Centos7 ~]# echo Lai        Duy
+Lai Duy
+[root@Centos7 ~]# echo Lai                      Duy
+Lai Duy
+```
 
+Lệnh `echo` sẽ hiển thị từng đối số mà nó nhận được từ `shell`. Lệnh `echo` cũng sẽ thêm một khoảng trắng mới giữa các đối số mà nó nhận được.
 
+##### 1.3. Dấu nháy đơn
+Bạn có thể ngăn chặn việc xóa các khoảng trắng bằng cách trích dẫn các khoảng trắng. Nội dung của chuỗi trích dẫn được coi là một đối số. Trong ảnh chụp màn hình bên dưới `echo` nhận được chỉ một đối số.
+```
+[root@Centos7 ~]# echo 'Lai Duy'
+Lai Duy
+[root@Centos7 ~]# echo 'Lai      Duy'
+Lai      Duy
+[root@Centos7 ~]# echo 'Lai            Duy'
+Lai            Duy
+```
+
+##### 1.4. Dấu ngoặc kép
+Bạn cũng có thể ngăn chặn việc xóa các khoảng trắng bằng cách trích dẫn kép các khoảng trắng. Giống như ở trên, `echo` chỉ nhận một đối số.
+```
+[root@Centos7 ~]# echo "Lai            Duy"
+Lai            Duy
+```
+
+##### 1.5. echo và trích dẫn
+Các dòng được trích dẫn có thể bao gồm các ký tự thoát đặc biệt được nhận dạng bởi lệnh `echo` (khi sử dụng `echo -e`). Ảnh chụp màn hình bên dưới cho thấy cách sử dụng `\n` cho dòng mới và `\t` cho `tab` (thường là tám khoảng trắng).
+```
+[root@Centos7 ~]# echo -e "Lai\nDuy"
+Lai
+Duy
+[root@Centos7 ~]# echo -e "Lai \n Duy"
+Lai
+ Duy
+[root@Centos7 ~]# echo -e "Lai \nDuy"
+Lai
+Duy
+[root@Centos7 ~]# echo -e "Lai \n     Duy"
+Lai
+     Duy
+```
+
+```
+[root@Centos7 ~]# echo -e "Lai \t Duy"
+Lai      Duy
+[root@Centos7 ~]# echo -e "Lai \tDuy"
+Lai     Duy
+[root@Centos7 ~]# echo -e "Lai\tDuy"
+Lai     Duy
+```
+Lệnh `echo` có thể tạo ra nhiều hơn khoảng trắng, tab và dòng mới. 
+
+#### 2. Lệnh
+##### 2.1. type
+Để tìm hiểu xem một lệnh được cung cấp cho shell được thực thi như một lệnh bên ngoài hay không hoặc như một lệnh nội trang, hãy sử dụng lệnh `type`.
+```
+[root@Centos7 ~]# type cd
+cd is a shell builtin
+[root@Centos7 ~]# type cat
+cat is hashed (/usr/bin/cat)
+```
+
+Như bạn có thể thấy, lệnh `cd` là bên trong và lệnh `cat` là bên ngoài.
+Bạn cũng có thể sử dụng lệnh này để hiển thị cho bạn biết lệnh đó có phải là bí danh hay không.
+```
+[root@Centos7 ~]# type ls
+ls is aliased to `ls --color=auto'
+```
+
+##### 2.2. Chạy các lệnh bên ngoài
+Một số lệnh có cả phiên bản nội trang và phiên bản bên ngoài. Khi một trong các lệnh này được thực thi, phiên bản nội trang được ưu tiên. Để chạy phiên bản bên ngoài, bạn phải nhập đường dẫn đầy đủ đến lệnh.
+```
+[root@Centos7 ~]# type -a echo
+echo is a shell builtin
+echo is /usr/bin/echo
+[root@Centos7 ~]# /bin/echo Running the external echo command...
+Running the external echo command...
+```
+
+##### 2.3. which
+```
+[root@Centos7 ~]# which ls cd mv rm mkdir
+alias ls='ls --color=auto'
+        /usr/bin/ls
+alias mv='mv -i'
+        /usr/bin/mv
+alias rm='rm -i'
+        /usr/bin/rm
+/usr/bin/cd
+/usr/bin/mkdir
+```
+
+#### 3. Bí danh
+##### 3.1. Tạo các bí danh
+`shell` cho phép bạn tạo bí danh. Bí danh thường được sử dụng để dễ nhớ hơn
+tên cho một lệnh hiện có hoặc để dễ dàng cung cấp các tham số.
+```
+[root@Centos7 ~]# cat muahe.txt
+Ngay 12/5/2022 co mua
+Sap duoc di quan su
+[root@Centos7 ~]# alias duy=tac
+[root@Centos7 ~]# duy muahe.txt
+Sap duoc di quan su
+Ngay 12/5/2022 co mua
+[root@Centos7 ~]# alias duy=cat
+[root@Centos7 ~]# duy muahe.txt
+Ngay 12/5/2022 co mua
+Sap duoc di quan su
+```
+
+##### 3.2. Viết tắt các lệnh
+Bí danh cũng có thể hữu ích để viết tắt một lệnh hiện có.
+```
+[root@Centos7 ~]# alias .='ls -l'
+[root@Centos7 ~]# ls -l
+total 32
+-rw-r--r--. 1 root root   72 May 12 15:21 all
+-rw-------. 1 root root 1244 May 12 10:39 anaconda-ks.cfg
+drwxr-xr-x. 2 root root  127 May 12 14:29 laiduy
+-rw-r--r--. 1 root root   43 May 12 15:32 muahe.txt
+-rw-r--r--. 1 root root   64 May 12 15:38 test1.txt
+-rw-r--r--. 1 root root   26 May 12 15:17 test6.png
+-rw-r--r--. 1 root root   20 May 12 15:20 test7.png
+-rw-r--r--. 1 root root   26 May 12 15:20 test8.png
+-rw-r--r--. 1 root root   38 May 12 15:25 txt.txt
+[root@Centos7 ~]# .
+total 32
+-rw-r--r--. 1 root root   72 May 12 15:21 all
+-rw-------. 1 root root 1244 May 12 10:39 anaconda-ks.cfg
+drwxr-xr-x. 2 root root  127 May 12 14:29 laiduy
+-rw-r--r--. 1 root root   43 May 12 15:32 muahe.txt
+-rw-r--r--. 1 root root   64 May 12 15:38 test1.txt
+-rw-r--r--. 1 root root   26 May 12 15:17 test6.png
+-rw-r--r--. 1 root root   20 May 12 15:20 test7.png
+-rw-r--r--. 1 root root   26 May 12 15:20 test8.png
+-rw-r--r--. 1 root root   38 May 12 15:25 txt.txt
+```
+
+##### 3.3. Tùy chọn mặc định
+Bí danh có thể được sử dụng để cung cấp các lệnh với các tùy chọn mặc định. Ví dụ dưới đây cho thấy cách đặt tùy chọn `-i` mặc định khi nhập `rm`.
+```
+[root@Centos7 ~]# rm -i test8.png
+rm: remove regular file ‘test8.png’? n
+[root@Centos7 ~]# rm test8.png
+[root@Centos7 ~]# ls test8.png
+ls: cannot access test8.png: No such file or directory
+[root@Centos7 ~]# touch test8.png
+[root@Centos7 ~]# alias rm='rm -i'
+[root@Centos7 ~]# rm test8.png
+rm: remove regular empty file ‘test8.png’? n
+```
+Một số bản phân phối bật bí danh mặc định để bảo vệ người dùng khỏi việc vô tình xóa tệp (' `rm -i` ',' `mv -i` ',' `cp -i` ')
+
+##### 3.4. Xem bí danh
+Bạn có thể cung cấp một hoặc nhiều bí danh làm đối số cho lệnh bí danh để lấy định nghĩa. Không cung cấp đối số sẽ cung cấp danh sách đầy đủ các bí danh hiện tại.
+```
+[root@Centos7 ~]# alias . l c
+alias .='ls -l'
+alias l='.'
+alias c='clear'
+```
+
+##### 3.5. Bỏ bí danh
+Bạn có thể hoàn tác một `alias` bằng lệnh `unalias`.
+```
+[root@Centos7 ~]# which rm
+alias rm='rm -i'
+        /usr/bin/rm
+[root@Centos7 ~]# unalias rm
+[root@Centos7 ~]# which rm
+/usr/bin/rm
+```
+
+#### 4. Hiển thị shell expansion
+Bạn có thể hiển thị mở rộng shell với `set -x` và ngừng hiển thị nó với `set + x`. Bạn có thể muốn sử dụng thêm điều này trong khóa học này hoặc khi nghi ngờ về chính xác `shell` là gì thực hiện với lệnh của bạn.
+```
+[root@Centos7 ~]# set -x
+++ printf '\033]0;%s@%s:%s\007' root Centos7 '~'
+[root@Centos7 ~]# echo $USER
++ echo root
+root
+++ printf '\033]0;%s@%s:%s\007' root Centos7 '~'
+[root@Centos7 ~]# echo \$USER
++ echo '$USER'
+$USER
+++ printf '\033]0;%s@%s:%s\007' root Centos7 '~'
+[root@Centos7 ~]# set +x
++ set +x
+[root@Centos7 ~]# echo $USER
+root
+``` 
+
+### VI. Người điều khiển
+Trong chương này, chúng tôi đặt nhiều hơn một lệnh trên dòng lệnh bằng cách sử dụng điều khiển các toán tử. Chúng tôi cũng thảo luận ngắn gọn về các tham số liên quan ($?) Và các ký tự đặc biệt tương tự (&).
+#### 1. Dấu chấm phẩy (;)
+Bạn có thể đặt hai hoặc nhiều lệnh trên cùng một dòng được phân tách bằng dấu chấm phẩy`;` . Cái vỏ sẽ quét dòng cho đến khi nó chạm đến dấu chấm phẩy. Tất cả các đối số trước dấu chấm phẩy này sẽ được coi là một lệnh riêng biệt với tất cả các đối số sau dấu chấm phẩy. Cả hai chuỗi sẽ được thực hiện tuần tự với trình bao chờ mỗi lệnh kết thúc trước đó bắt đầu cái tiếp theo.
+```
+[root@Centos7 ~]# echo Lai Khanh Duy; echo Sinh nam 2002
+Lai Khanh Duy
+Sinh nam 2002
+```
+
+#### 2. Dấu và (&)
+Khi một dòng kết thúc bằng ký hiệu và `&`, shell sẽ không đợi lệnh kết thúc.
+Bạn sẽ nhận được lời nhắc trình bao của mình trở lại và lệnh được thực thi ở chế độ nền. Bạn sẽ nhận được thông báo khi lệnh này đã hoàn tất thực thi ở chế độ nền.
+```
+[root@Centos7 ~]# cd /var 20 &
+[1] 1970
+[root@Centos7 ~]# cd /var
+[1]+  Done                    cd /var 20  (wd: ~)
+(wd now: /var)
+```
+
+#### 3. Dấu chấm hỏi, đô la ($?)
+Mã thoát của lệnh trước đó được lưu trữ trong biến shell `$?`. Trên thực tế `$?` là một tham số shell và không phải là một biến, vì bạn không thể gán giá trị cho `$?`.
+```
+[root@Centos7 ~]# touch file1
+[root@Centos7 ~]# echo $?
+0
+[root@Centos7 ~]# rm file1
+[root@Centos7 ~]# echo $?
+0
+[root@Centos7 ~]# rm file1
+rm: cannot remove ‘file1’: No such file or directory
+[root@Centos7 ~]# echo $?
+1
+```
+
+#### 4. Dấu kép và (&&)
+Shell sẽ diễn giải `&&` là `AND logic`. Khi sử dụng `&&`, lệnh thứ hai chỉ được thực thi nếu cái đầu tiên thành công (trả về trạng thái thoát 0).
+```
+[root@Centos7 ~]# echo Khanh && zcho Duy
+Khanh
+-bash: zcho: command not found
+[root@Centos7 ~]# echo Khanh && echo Duy
+Khanh
+Duy
+[root@Centos7 ~]# acho Khanh && echo Duy
+-bash: acho: command not found
+[root@Centos7 ~]# echo Khanh && efcho Duy && echo Lai
+Khanh
+-bash: efcho: command not found
+```
+
+Một ví dụ khác về nguyên tắc `logic AND` tương tự. Ví dụ này bắt đầu với một `cd` đang hoạt động theo sau là `ls`, sau đó là cd không hoạt động mà không theo sau là `ls`.
+```
+[root@Centos7 ~]# cd laiduy && ls
+file1  file1.1  file2  file3  test4.txt  test5.txt  test6.txt  Test.txt
+[root@Centos7 laiduy]# cd laiduy && ls
+-bash: cd: laiduy: No such file or directory
+```
+
+#### 5. Thanh dọc kép (||)
+`||` đại diện cho một `OR logic`. Lệnh thứ hai chỉ được thực thi khi lệnh đầu tiên lệnh không thành công (trả về trạng thái thoát khác 0).
+```
+[root@Centos7 ~]# echo Lai || echo Khanh; echo Duy
+Lai
+Duy
+[root@Centos7 ~]# dcho Lai || echo Khanh; echo Duy
+-bash: dcho: command not found
+Khanh
+Duy
+```
+
+#### 6. kết hợp && và ||
+Bạn có thể sử dụng `logic AND` và `logic OR` này để viết cấu trúc `if-then-else` trên dòng lệnh. Ví dụ này sử dụng `echo` để hiển thị xem lệnh `rm` có thành công hay không.
+```
+[root@Centos7 ~]# rm test7.png && echo Da xoa || echo Khong tim thay file can xoa
+Da xoa
+[root@Centos7 ~]# rm test7.png && echo Da xoa || echo Khong tim thay file can xoa
+rm: cannot remove ‘test7.png’: No such file or directory
+Khong tim thay file can xoa
+```
+
+#### 7. Dấu thăng
+Mọi thứ được viết sau dấu thăng `(#)` đều bị `shell` bỏ qua. Điều này rất hữu ích để viết một `comment shell`, nhưng không ảnh hưởng đến việc thực thi lệnh hoặc mở rộng shell.
+```
+[root@Centos7 ~]# mkdir test_# # tao mot thu muc de thu cu phap
+[root@Centos7 ~]# ls
+all  anaconda-ks.cfg  laiduy  muahe.txt  test_#  test8.png
+[root@Centos7 ~]# cd test_#/ # truy cap vao thu muc vua tao
+```
+
+#### 7. Thoát các ký tự đặc biệt
+Ký tự dấu gạch chéo ngược `\` cho phép sử dụng các ký tự điều khiển, nhưng không có `shell` giải thích nó, điều này được gọi là `ký tự thoát`.
+```
+[root@Centos7 ~]# echo \Duy \;\Khanh
+Duy ;Khanh
+[root@Centos7 ~]# echo \Duy \;    \Khanh
+Duy ; Khanh
+```
+
+#### 8. Dấu gạch chéo ngược cuối dòng
+Các dòng kết thúc bằng dấu gạch chéo ngược được tiếp tục ở dòng tiếp theo. `shell` không giải thích ký tự dòng mới và sẽ đợi khi mở rộng trình bao và thực thi dòng lệnh cho đến khi gặp phải một dòng mới không có dấu gạch chéo ngược.
+```
+[root@Centos7 ~]# echo dau gach cheo \
+> aka \
+> bka
+dau gach cheo aka bka
+```
 
 
 
