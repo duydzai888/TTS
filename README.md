@@ -30,5 +30,11 @@ Nơi lưu giữ những tài liệu của các công việc được giao tại 
 
 [7. Shell Variables](https://github.com/duylk208/TTS/blob/main/Fundamental/7.Shell_variables.md)
 
+[8. Shell embedding and options](https://github.com/duylk208/TTS/blob/main/Fundamental/8.Shell_embedding_and_options.md)
+
+[9. Shell history](https://github.com/duylk208/TTS/blob/main/Fundamental/9.Shell_history.md)
+
+[10. Shell globbing](https://github.com/duylk208/TTS/blob/main/Fundamental/10.File_globbing.md)
+
 ## Windows
 [RDP_Windows](https://github.com/duylk208/TTS/blob/main/RDP_Windown.md)
