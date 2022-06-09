@@ -36,5 +36,7 @@ Nơi lưu giữ những tài liệu của các công việc được giao tại 
 
 [10. Shell globbing](https://github.com/duylk208/TTS/blob/main/Fundamental/10.File_globbing.md)
 
+[11. I/O redirection](https://github.com/duylk208/TTS/blob/main/Fundamental/11.I-O_redirection.md)
+
 ## Windows
 [RDP_Windows](https://github.com/duylk208/TTS/blob/main/RDP_Windown.md)
