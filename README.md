@@ -40,5 +40,7 @@ Nơi lưu giữ những tài liệu của các công việc được giao tại 
 
 [11. I/O redirection](https://github.com/duylk208/TTS/blob/main/Fundamental/11.I-O_redirection.md)
 
+[12. Filter](https://github.com/duylk208/TTS/blob/main/Fundamental/12.Filter.md)
+
 ## Windows
 [RDP_Windows](https://github.com/duylk208/TTS/blob/main/RDP_Windown.md)
