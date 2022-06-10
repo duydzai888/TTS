@@ -15,6 +15,8 @@ Nơi lưu giữ những tài liệu của các công việc được giao tại 
 
 [7. Reset Password](https://github.com/duylk208/TTS/blob/main/Centos7/Reset_Passwd.md)
 
+[8. Log SSH](https://github.com/duylk208/TTS/blob/main/Centos7/Log_SSH.md)
+
 ## Fundamental
 [1. Làm việc với thư mục](https://github.com/duylk208/TTS/blob/main/Fundamental/1.Lam_viec_voi_thu_muc.md)
 
