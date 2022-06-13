@@ -42,5 +42,6 @@ Nơi lưu giữ những tài liệu của các công việc được giao tại 
 
 [12. Filter](https://github.com/duylk208/TTS/blob/main/Fundamental/12.Filter.md)
 
+[13. Basic Unix Tools](https://github.com/duylk208/TTS/blob/main/Fundamental/13.Basic_Unix_tools.md)
 ## Windows
 [RDP_Windows](https://github.com/duylk208/TTS/blob/main/RDP_Windown.md)
