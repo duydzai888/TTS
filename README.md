@@ -56,6 +56,6 @@ Nơi lưu giữ những tài liệu của các công việc được giao tại 
 
 [17. Scripting loops](https://github.com/duylk208/TTS/blob/main/Fundamental/17.Scripting_loops.md)
 
-[18. Scripting_parameters](https://github.com/duylk208/TTS/blob/main/Fundamental/18.Scripting_parameters.md)
+[18. Scripting parameters](https://github.com/duylk208/TTS/blob/main/Fundamental/18.Scripting_parameters.md)
 ## Windows
 [RDP_Windows](https://github.com/duylk208/TTS/blob/main/RDP_Windown.md)
