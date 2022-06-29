@@ -15,6 +15,12 @@ Nơi lưu giữ những tài liệu của các công việc được giao tại 
 
 [7. Reset Password](https://github.com/duylk208/TTS/blob/main/Centos7/Reset_Passwd.md)
 
+[8. Log SSH](https://github.com/duylk208/TTS/blob/main/Centos7/Log_SSH.md)
+
+[9. Cài đặt LEMP](https://github.com/duylk208/TTS/blob/main/Centos7/Cai_dat_LEMP.md)
+
+[10. Thay đổi tên card mạng](https://github.com/duylk208/TTS/blob/main/Centos7/Thay_doi_ten_card_mang.md)
+
 ## Fundamental
 [1. Làm việc với thư mục](https://github.com/duylk208/TTS/blob/main/Fundamental/1.Lam_viec_voi_thu_muc.md)
 
@@ -36,5 +42,26 @@ Nơi lưu giữ những tài liệu của các công việc được giao tại 
 
 [10. Shell globbing](https://github.com/duylk208/TTS/blob/main/Fundamental/10.File_globbing.md)
 
+[11. I/O redirection](https://github.com/duylk208/TTS/blob/main/Fundamental/11.I-O_redirection.md)
+
+[12. Filter](https://github.com/duylk208/TTS/blob/main/Fundamental/12.Filter.md)
+
+[13. Basic Unix Tools](https://github.com/duylk208/TTS/blob/main/Fundamental/13.Basic_Unix_tools.md)
+
+[14. Regular Expressions](https://github.com/duylk208/TTS/blob/main/Fundamental/14.Regular_expressions.md)
+
+[15. vi](https://github.com/duylk208/TTS/blob/main/Fundamental/15.vi.md)
+
+[16. Scripting introduction](https://github.com/duylk208/TTS/blob/main/Fundamental/16.Scripting_introduction.md)
+
+[17. Scripting loops](https://github.com/duylk208/TTS/blob/main/Fundamental/17.Scripting_loops.md)
+
+[18. Scripting parameters](https://github.com/duylk208/TTS/blob/main/Fundamental/18.Scripting_parameters.md)
+
+[19. More scripting](https://github.com/duylk208/TTS/blob/main/Fundamental/19.More_scripting.md)
+
+[20. INtroduction to user](https://github.com/duylk208/TTS/blob/main/Fundamental/20.Introduction_to_users.md)
+
+[21. User management](https://github.com/duylk208/TTS/blob/main/Fundamental/21.User_management.md)
 ## Windows
 [RDP_Windows](https://github.com/duylk208/TTS/blob/main/RDP_Windown.md)

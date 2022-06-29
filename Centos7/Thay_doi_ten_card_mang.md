@@ -1,5 +1,3 @@
-﻿# Thay đổi tên card mạng
-
 ### Mục lục
 [1. Kiểm tra tên card mạng hiện tại](#CardHienTai)
 
