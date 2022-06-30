@@ -65,5 +65,7 @@ Nơi lưu giữ những tài liệu của các công việc được giao tại 
 [21. User management](https://github.com/duylk208/TTS/blob/main/Fundamental/21.User_management.md)
 
 [22. User passwords](https://github.com/duylk208/TTS/blob/main/Fundamental/22.User_passwords.md)
+
+[23. User Profiles](https://github.com/duylk208/TTS/blob/main/Fundamental/23.User_Profiles.md)
 ## Windows
 [RDP_Windows](https://github.com/duylk208/TTS/blob/main/RDP_Windown.md)
