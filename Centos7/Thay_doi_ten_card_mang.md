@@ -44,7 +44,6 @@
 
 ### B3. Tắt NetworkManager
 - Đảm bảo rằng NetworkManager không hoàn nguyên các thay đổi khi khởi động lại máy hay khởi động lại mạng.
-
 ```
 [root@client ~]# systemctl disable NetworkManager
 ```
