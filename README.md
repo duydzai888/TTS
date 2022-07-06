@@ -74,8 +74,10 @@ Nơi lưu giữ những tài liệu của các công việc được giao tại 
 
 [26. Advanced file permissions](https://github.com/duylk208/TTS/blob/main/Fundamental/26.Advanced_file_permissions.md)
 
-[27. File links](https://github.com/duylk208/TTS/blob/main/Fundamental/28.File_links.md)
+[27. Access control list](https://github.com/duylk208/TTS/blob/main/Fundamental/27.Access_control_lists.md)
 
-[28. Access control list](https://github.com/duylk208/TTS/blob/main/Fundamental/27.Access_control_lists.md)
+[28. File links](https://github.com/duylk208/TTS/blob/main/Fundamental/28.File_links.md)
+
+
 ## Windows
 [RDP_Windows](https://github.com/duylk208/TTS/blob/main/RDP_Windown.md)
