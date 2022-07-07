@@ -101,6 +101,7 @@ Khởi động lại dịch vụ: `systemctl restart nginx`.
 
 ### III. Kiểm tra
 Truy cập ip: `192.168.20.200`.
+
 ![check](Pictures/xong.png)
 
 
