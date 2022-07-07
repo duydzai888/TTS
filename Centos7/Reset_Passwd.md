@@ -8,7 +8,8 @@
 - [1. Đổi do nghi ngờ có người vào](#Ubuntu_doimatkhau)
 - [2. Đổi do quên](#Ubuntu_doquen)
   
-[III. Reset Password Centos7](#reset-password-centos7)
+[III. Reset password Ubuntu 18](#reset_passwd_Ubuntu18)  
+[IV. Reset Password Centos7](#reset-password-centos7)
 - [1. Đổi do nghi ngờ có người vào](#Centos_doimatkhau)
 - [2. Đổi do quên](#Centos_doquen)
 
@@ -54,7 +55,7 @@ Ta tiến hành nhập lại mật khẩu cũ và nhập mật khẩu mới.
 
 <a name="Ubuntu_doquen"></a>
 #### 2. Đổi do quên
-Khởi động lại Ubuntu và giữ `Shift` cho đế khi xuất hiện bảng như hình dưới.
+Khởi động lại Ubuntu và giữ `Shift` cho đến khi xuất hiện bảng như hình dưới.
 
 ![image](https://user-images.githubusercontent.com/84270045/167057794-2ed17ed3-629d-4dbc-b32c-d4701af034fb.png)
 
@@ -81,9 +82,34 @@ Kiểm tra trạng thái của phân vùng gốc bằng lệNh `mount | grep -w 
 
 Lưu và khởi động lại: `exec /sbin/itit`
 
+<a name="reset_passwd_Ubuntu18"></a>
+
+### III. Reset password Ubuntu 18
+- Đổi do quên mật khẩu.
+B1. Khởi động lại Ubuntu và giữ `Shift` cho đến khi xuất hiện bảng như bên dưới.
+![reboot](Pictures/ubuntu.png)
+
+B2. Ấn `e` để tiến hành chỉnh sửa. Sau khi ấn `e` sẽ xuất hiện nội dung như bên dưới.
+![e](Pictures/e-ubuntu.png)
+
+B3. Kéo xuống và sửa đổi nội dung như ảnh bên dưới.
+![ro](Pictures/ro-ubuntu.png)
+
+![rw](Pictures/rw-ubuntu.png)
+
+Sau khi chỉnh sửa xong, ta ấn `Ctrl x` hoặc `F10` để khởi động lại hệ thống của bạn. Hệ thống của bạn sẽ khởi động vào màn hình root shell như hình dưới. Bạn có thể xác nhận rằng hệ thống tệp gốc có quyền truy cập đọc và ghi bằng cách chạy lệnh `mount | grep -w /`.
+![root](Pictures/root.png) 
+
+Bây giờ ta đã có thể đổi mật khẩu của user.
+![change](Pictures/passwd.png)
+
+Sau khi đổi xong, ta tiến hành khởi động lại `exec /sbin/init`.
+Chờ khởi động lại xong và đăng nhập vào bằng mật khẩu mới.
+
+
 
 <a name="reset-password-centos7"></a>
-### III. Reset Password Centos7
+### IV. Reset Password Centos7
 
 <a name="Centos_doimatkhau"></a>
 #### 1. Đổi do nghi ngờ có người vào.
@@ -127,8 +153,8 @@ reboot
 ## Tài liệu tham khảo
 - [Centos7](https://www.7host.vn/huong-dan-khoi-phuc-mat-khau-quan-tri-reset-root-password-tren-may-chu-su-dung-he-dieu-hanh-centos/#CentOS_7)
 
-- [Ubuntu](https://itsystems.vn/reset-password-on-ubuntu-20-04)
-
+- [Ubuntu20](https://itsystems.vn/reset-password-on-ubuntu-20-04)
+- [Ubuntu18](https://viettelco.vn/huong-dan-dat-lai-mat-khau-root-da-quen-trong-ubuntu/)
 - [Windows](https://trainghiemso.vn/cach-lay-lai-mat-khau-windows-10-de-dang-nhat/?fbclid=IwAR1wYwpAfNVqeZVS72O2yKHM3wreepC7RtzjL1TrmwKRplW9ghQkkL0b39I)
 
 **Tài liệu tham khảo chung:** Github [anh Huy](https://github.com/huydv398/Linux-tutorial/blob/15ca6a0dedad74a533259b28948cb136d8b26e2f/tool/Reset-passwd.md)
