@@ -28,7 +28,7 @@
 
 [VI. Các loại hình kết nối internet ở Việt Nam](#cac_loai_hinh_ket_noi_internet_o_Viet_Nam)
 - [1. ADSL](#ADSL)
-- [2. FTTH/FTTB](#FTTH_FTTB)
+- [2. FTTH/FTTB (Fiber to the Home/Fiber to the Building)](#FTTH_FTTB)
 - [3. Cable TV](#cableTV)
 - [4. Leased line internet](#leased_line_internet)
 
@@ -217,7 +217,7 @@ Sơ đồ này không có tất cả những đường kết nối tới những
 
 <a name="FTTH_FTTB"></a>
 
-### 2. FTTH/FTTB
+### 2. FTTH/FTTB (Fiber to the Home/Fiber to the Building)
 Là loại hình kết nối cáp quang nên tốc độ kết nối vào internet nhanh.
 
 <a name="cableTV"></a>
