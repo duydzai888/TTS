@@ -1,7 +1,7 @@
 # TTS_Viettelco
 Nơi lưu giữ những tài liệu của các công việc được giao tại Viettelco
 ## CCNA
-[1. Network Basic]([https://github.com/duylk208/TTS/tree/main/CCNA](https://github.com/duylk208/TTS/blob/main/CCNA/Network_basic.md)
+[1. Network Basic](https://github.com/duylk208/TTS/blob/main/CCNA/Network_basic.md)
 
 ## Centos7
 [1. Cài đặt LAMP](https://github.com/duylk208/TTS/blob/main/Centos7/Cai_dat_LAMP.md)
