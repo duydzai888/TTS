@@ -1,5 +1,8 @@
 # TTS_Viettelco
 Nơi lưu giữ những tài liệu của các công việc được giao tại Viettelco
+## CCNA
+[1. Network Basic](https://github.com/duylk208/TTS/tree/main/CCNA)
+
 ## Centos7
 [1. Cài đặt LAMP](https://github.com/duylk208/TTS/blob/main/Centos7/Cai_dat_LAMP.md)
 
@@ -77,7 +80,6 @@ Nơi lưu giữ những tài liệu của các công việc được giao tại 
 [27. Access control list](https://github.com/duylk208/TTS/blob/main/Fundamental/27.Access_control_lists.md)
 
 [28. File links](https://github.com/duylk208/TTS/blob/main/Fundamental/28.File_links.md)
-
 
 ## Windows
 [RDP_Windows](https://github.com/duylk208/TTS/blob/main/RDP_Windown.md)
