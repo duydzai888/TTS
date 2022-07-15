@@ -24,6 +24,8 @@ Nơi lưu giữ những tài liệu của các công việc được giao tại 
 
 [10. Thay đổi tên card mạng](https://github.com/duylk208/TTS/blob/main/Centos7/Thay_doi_ten_card_mang.md)
 
+[11. Cài đặt Nginx Proxy](https://github.com/duylk208/TTS/blob/main/Centos7/Cai_dat_nginx_proxy.md)
+
 ## Fundamental
 [1. Làm việc với thư mục](https://github.com/duylk208/TTS/blob/main/Fundamental/1.Lam_viec_voi_thu_muc.md)
 
