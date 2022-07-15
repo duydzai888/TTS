@@ -188,6 +188,7 @@ Nếu vòng ngược chiều kim đồng hồ bị đứt, dữ liệu sẽ đi 
 
 ### 2. Logical
 Thể hiện luồng dữ liệu di chuyển trong sơ đồ vật lý như thế nào.
+
 ![logical](Pictures/logical.jpg)
 
 Sơ đồ logical đôi khi rất giống với sơ đồ physical.
