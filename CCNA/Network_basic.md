@@ -153,12 +153,14 @@ các thiết bị bên trong mạng của mình để nếu xảy ra sự cố t
 Có 3 loại sơ đồ chính: Bus, Ring và Star.
 
 - Sơ đồ dạng bus
+
 ![bus](Pictures/bus.png)
 
 Những điểm mạng sẽ được kết nối với nhau trên một đường truyền. Khi một máy trong đường truyền truyền đi một dữ liệu vào đường truyền thì các máy trong mạng bus này đều nhận được dữ liệu.
 
 - Sơ đồ dạng hình sao (Star)
 Tất cả các thiết bị được kết nối qua một thiết bị tập trung ở giữa.
+
 ![star](Pictures/star.png)
 
 Khi một máy A muốn gửi gì đó cho máy B, thì máy A sẽ đẩy dữ liệu qua thiết bị tập trung và thiết bị tập trung sẽ gửi dữ liệu đến cho máy B một cách riêng lẻ và bảo mật.
@@ -166,13 +168,16 @@ Khi một máy A muốn gửi gì đó cho máy B, thì máy A sẽ đẩy dữ 
 Trong sơ đồ dạng sao tồn tại một điểm chết chính là điểm ở giữa. Nếu điểm ở giữa chết thì tất cả các máy sung quanh sẽ không di chuyển được vì điểm ở giữa mang tính chất là điểm chung chuyển. Còn nếu máy khác bị chết thì chỉ có máy đấy bị cô lập và không ảnh hưởng gì đến các máy khác.
 
 Để giải quyết vấn đề này, họ đưa ra một mô hình sao mở rộng. Có nhiều thiết bị tập trung hơn.
+
 ![more_star](Pictures/star_more.png)
 
 - Sơ đồ dạng vòng (ring)
 Các thiết bị được đóng gói với nhau theo hình vòng tròn và luồng dữ liệu sẽ di chuyển theo cùng chiều hoặc ngược chiều kim đồng hồ.
+
 ![ring](Pictures/ring.png)
 
 Để tránh cho việc sơ đồ bị tê liệt do đứt dây giữa 2 máy, người ta đưa ra một sơ đồ mở rộng hơn là Dual Ring.
+
 ![dual_ring](Pictures/dual_ring.png)
 
 Các phần màu vàng đại diện cho 1 thiết bị tập trung. Trong sơ đồ lúc này có 2 vòng di chuyển, 1 vòng ngược chiều và 1 vòng cùng chiều kim đồng hồ.
@@ -191,9 +196,11 @@ Sơ đồ logical đôi khi rất giống với sơ đồ physical.
 
 ### 3. Sơ đồ Full Mesh
 Là tất cả các thiết bị đều có những đường kết nối tới tất cả các thiết bị còn lại. Mô hình này đảm bảo tính dự phòng cao cho sơ đồ mạng.
+
 ![full_mesh](Pictures/full_mesh.png)
 
 Mô hình này tính dự phòng cao nhưng không hợp lý do chi phí triển khai những đường dự phòng này rất cao và dễ phát sinh ra lỗi. Vì vậy nên họ đã đưa ra thêm 1 sơ đồ nữa là sơ đồ `Partial Mesh`.
+
 ![partial_mesh](Pictures/partial_mesh.png)
 
 Sơ đồ này không có tất cả những đường kết nối tới những điểm còn lại mà những nơi nào quan trọng như trụ sở thì sẽ có những đường từ chi nhánh khác về nó.
