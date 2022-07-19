@@ -3,6 +3,8 @@ Nơi lưu giữ những tài liệu của các công việc được giao tại 
 ## CCNA
 [1. Network Basic](https://github.com/duylk208/TTS/blob/main/CCNA/Network_basic.md)
 
+[2. Cấu hình cơ bản Cisco Router](https://github.com/duylk208/TTS/blob/main/CCNA/Cau_hinh_co_ban_Cisco_Router.md)
+
 ## Centos7
 [1. Cài đặt LAMP](https://github.com/duylk208/TTS/blob/main/Centos7/Cai_dat_LAMP.md)
 
