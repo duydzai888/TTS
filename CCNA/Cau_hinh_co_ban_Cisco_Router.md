@@ -130,7 +130,7 @@ R1(config-line)#password duylk123
 R1(config-line)#login
 R1(config-line)#
 ```
-Để password có hiệU lực, ta gõ thêm từ `login`. Ở đây ta đặt mật khẩu `console` là `duylk123`. 
+Để password có hiệu lực, ta gõ thêm từ `login`. Ở đây ta đặt mật khẩu `console` là `duylk123`. 
 Để test thử mật khẩu, ta cần thoát hẳn khỏi Router bằng lệnh `exit`. Mỗi lần dùng lệnh ta sẽ thoát được 1 cấp. Dùng lệnh `exit` đến khi hiện ra như ví dụ dưới.
 ```
 R1(config-line)#exit
@@ -146,8 +146,6 @@ R1#exit
 
 
 
-
-
 R1 con0 is now available
 
 
@@ -156,9 +154,6 @@ R1 con0 is now available
 
 
 Press RETURN to get started.
-
-
-
 
 
 
