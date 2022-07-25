@@ -8,6 +8,8 @@ Nơi lưu giữ những tài liệu của các công việc được giao tại 
 [3. Giao thức CDP](https://github.com/duylk208/TTS/blob/main/CCNA/Giao_thuc_CDP.md)
 
 [4. Cấu hình dịch vụ telnet, SSH trên Cisco Router](https://github.com/duylk208/TTS/blob/main/CCNA/Cau_hinh_telnet_va_ssh_tren_Cisco.md)
+
+[5. Hướng dẫn khôi phục hệ điều hành IOS trên Router](https://github.com/duylk208/TTS/blob/main/CCNA/Huong_dan_khoi_phuc_he_dieu_hanh_IOS_tren_Router.md)
 ## Centos7
 [1. Cài đặt LAMP](https://github.com/duylk208/TTS/blob/main/Centos7/Cai_dat_LAMP.md)
 
