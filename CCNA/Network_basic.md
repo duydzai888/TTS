@@ -66,7 +66,7 @@ Trong mạng máy tính có 4 tính năng về chia sẻ, sao lưu dữ liệu.
 ### 2. Chia sẻ tài nguyên phần cứng.
 Ví dụ trong công ty, ta thường muốn in tài liệu từ máy in thì máy in này phải được kết nối vào hệ thống mạng và nếu thành viên của công ty muốn in tài liệu thì chỉ cần truy cập vào hệ thống mạng của công ty là có thể truy cập dễ dàng vào máy in và sử dụng bình thường.
 
-<a nâme="luu_tru_du_lieu_du_phong_du_lieu"></a>
+<a name="luu_tru_du_lieu_du_phong_du_lieu"></a>
 
 ### 3. Lưu trữ dự liệu, dự phòng dữ liệu.
 Trong một mạng máy tính, sẽ có những server để lưu trữ dữ liệu quan trọng (dữ liệu của khách hàng). Khi mà công ty không có server để lưu trữ dữ liệu thì ta có thể sử dụng các ứng dụng lưu trữ trực tuyến như gg drive.
