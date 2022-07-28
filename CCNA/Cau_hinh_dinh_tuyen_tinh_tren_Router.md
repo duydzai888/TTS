@@ -3,7 +3,7 @@
 ![dinh_tuyen_tinh](Pictures/cau_hinh_dinh_tuyen_tinh.png)
 # IP Planning
 
-![ip](Pictures/ip_tinh.png)
+![ip_planning](Pictures/ip_tinh.png)
 ### I. Khái niệm
 Định tuyến tĩnh là quá trình router thực hiện chuyển gói dữ liệu tới địa chỉ mạng đích dựa vào địa chỉ IP đích của gói dữ liệu. Để chuyển được gói dữ liệu đến đúng đích thì router phải học thông tin về đường đi tới các mạng khác. Thông tin về đường đi tới các mạng khác sẽ được người quản trị cấu hình cho router.
 
