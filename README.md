@@ -14,6 +14,8 @@ Nơi lưu giữ những tài liệu của các công việc được giao tại 
 [6. Cấu hình định tuyến tĩnh trên Router](https://github.com/duylk208/TTS/blob/main/CCNA/Cau_hinh_dinh_tuyen_tinh_tren_Router.md)
 
 [7. Giao thức cấp IP động DHCP](https://github.com/duylk208/TTS/blob/main/CCNA/Giao_thuc_cap_ip_dong_DHCP.md)
+
+[8. Cấu hình VLAN, Trunk](https://github.com/duylk208/TTS/blob/main/CCNA/Cau_hinh_VLAN-trunk.md)
 ## Centos7
 
 [1. Cài đặt LAMP](https://github.com/duylk208/TTS/blob/main/Centos7/Cai_dat_LAMP.md)
