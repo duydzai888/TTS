@@ -56,6 +56,82 @@ VTP gửi thông điệp quảng bá qua `VTP domain` mỗi 5 phút một lần,
 
 ![vlan2](Pictures/vlan2.png)
 
+## IV. Cấu hình VLAN trên Switch
+- Tạo VLAN
+```
+Server(config)#conf t
+Server(config)#vlan 10 
+Server(config-vlan)#name vlan10
+Server(config)#vlan 20
+Server(config-vlan)#name vlan20
+Server(config-vlan)#exit
+```
+
+- Kiểm tra VLAN vừa tạo
+```
+Server#show vlan
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    Fa0/1, Fa3/1, Fa4/1, Fa5/1
+10   vlan10                           active    
+20   vlan20                           active    
+1002 fddi-default                     active    
+1003 token-ring-default               active    
+1004 fddinet-default                  active    
+1005 trnet-default                    active    
+```
+
+Xác định port mà thiết bị cần cấu hình VLAN.
+```
+Server(config)#int range f1/1,f2/1
+Server(config)#switchport access vlan 10
+```
+
+## V. Cấu hình Trunking trên Cisco 
+- Chọn port cần cấu hình đường trunk và cấu hình bằng lệnh như ví dụ dưới.
+```
+Server(config)#int range f1/1,f2/1
+Server(config-if-range)#switchport mode trunk 
+```
+
+- Kiểm tra xem các interface này đã thiết lập đường trunk hay chưa, ta dùng lệnh `show interface trunk`.
+```
+Server#show interfaces trunk
+Port        Mode         Encapsulation  Status        Native vlan
+Fa1/1       on           802.1q         trunking      1
+Fa2/1       on           802.1q         trunking      1
+
+Port        Vlans allowed on trunk
+Fa1/1       10-20
+Fa2/1       10-20
+
+Port        Vlans allowed and active in management domain
+Fa1/1       10,20
+Fa2/1       10,20
+
+Port        Vlans in spanning tree forwarding state and not pruned
+Fa1/1       10,20
+Fa2/1       10,20
+```
+
+Kết quả ở trên cho thấy, Switch tên Server với port `Fa1/1` và `Fa2/1` đã được thiết lập đường trunk.
+
+Làm tương tự với các Switch còn lại.
+
+## VI. Giao thức VTP
+Giao thức cho phép lan truyền thông tin VLAN giữa các Switch.
+
+Tại Switch tên Client, ta thấy chỉ có duy nhất 1 `vlan 10`. Sau đó ta tiến hành thêm `vlan 20` tại Switch Server, lúc này Switch Client sẽ học `vlan 20` từ Switch Server.
+
+![client](Pictures/vtp_client.png)
+
+![server](Pictures/vtp_server.png)
+
+Kiểm tra lại ta thấy Client đã có thêm `vlan 20`.
+
+![client_new](Pictures/vtp_client_new.png)
+
 
 
 

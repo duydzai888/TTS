@@ -11,7 +11,7 @@
 ### II. Cấu hình định tuyến tĩnh
 Đầu tiên, ta phải cấu hình IP cho các cổng của router, cũng như IP và Default-gateway cho các PC. Default Gateway hiểu đơn giản là IP của cổng Router gần nhất mà PC đó kết nối trực tiếp đến.
 
-Cấu hình định tuyến tĩnh trên router Cisco đưỢc thực hiện bằng cách sử dụng lệnh có cú pháp sau: `ip route destination_subnet subnetmask{IP_next_hop|output_interface} [AD]`
+Cấu hình định tuyến tĩnh trên router Cisco được thực hiện bằng cách sử dụng lệnh có cú pháp sau: `ip route destination_subnet subnetmask{IP_next_hop|output_interface} [AD]`
 
 Trong đó:
 - destination_subnet: mạng đích đến.
