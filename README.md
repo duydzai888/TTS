@@ -1,7 +1,7 @@
 # TTS_Viettelco
 Nơi lưu giữ những tài liệu của các công việc được giao tại Viettelco
 ## CCNA
-[1. Network Basic](https://github.com/duylk208/TTS/blob/main/CCNA/Network_basic.md)
+[1. Network Basic](CCNA/1.Network_basic.md)
 
 [2. Cấu hình cơ bản Cisco Router](https://github.com/duylk208/TTS/blob/main/CCNA/Cau_hinh_co_ban_Cisco_Router.md)
 
