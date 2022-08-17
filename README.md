@@ -3,21 +3,21 @@ Nơi lưu giữ những tài liệu của các công việc được giao tại 
 ## CCNA
 [1. Network Basic](CCNA/1.Network_basic.md)
 
-[2. Cấu hình cơ bản Cisco Router](https://github.com/duylk208/TTS/blob/main/CCNA/Cau_hinh_co_ban_Cisco_Router.md)
+[2. Cấu hình cơ bản Cisco Router](CCNA/2.Cau_hinh_co_ban_Cisco_Router.md)
 
-[3. Giao thức CDP](https://github.com/duylk208/TTS/blob/main/CCNA/Giao_thuc_CDP.md)
+[3. Giao thức CDP](CCNA/3.Giao_thuc_CDP.md)
 
-[4. Cấu hình dịch vụ telnet, SSH trên Cisco Router](https://github.com/duylk208/TTS/blob/main/CCNA/Cau_hinh_telnet_va_ssh_tren_Cisco.md)
+[4. Cấu hình dịch vụ telnet, SSH trên Cisco Router](CCNA/4.Cau_hinh_telnet_va_ssh_tren_Cisco.md)
 
-[5. Hướng dẫn khôi phục hệ điều hành IOS trên Router](https://github.com/duylk208/TTS/blob/main/CCNA/Huong_dan_khoi_phuc_he_dieu_hanh_IOS_tren_Router.md)
+[5. Hướng dẫn khôi phục hệ điều hành IOS trên Router](CCNA/5.Huong_dan_khoi_phuc_he_dieu_hanh_IOS_tren_Router.md)
 
-[6. Cấu hình định tuyến tĩnh trên Router](https://github.com/duylk208/TTS/blob/main/CCNA/Cau_hinh_dinh_tuyen_tinh_tren_Router.md)
+[6. Cấu hình định tuyến tĩnh trên Router](CCNA/6.Cau_hinh_dinh_tuyen_tinh_tren_Router.md)
 
-[7. Giao thức cấp IP động DHCP](https://github.com/duylk208/TTS/blob/main/CCNA/Giao_thuc_cap_ip_dong_DHCP.md)
+[7. Giao thức cấp IP động DHCP](CCNA/7.Giao_thuc_cap_ip_dong_DHCP.md)
 
-[8. Cấu hình VLAN, Trunk](https://github.com/duylk208/TTS/blob/main/CCNA/Cau_hinh_VLAN-trunk.md)
+[8. Cấu hình VLAN, Trunk](CCNA/8.Cau_hinh_VLAN-trunk.md)
 
-[9. Định tuyến giữa các VLAN](https://github.com/duylk208/TTS/blob/main/CCNA/9.Dinh_tuyen_giua_cac_VLAN.md)
+[9. Định tuyến giữa các VLAN](CCNA/9.Dinh_tuyen_giua_cac_VLAN.md)
 ## Centos7
 
 [1. Cài đặt LAMP](https://github.com/duylk208/TTS/blob/main/Centos7/Cai_dat_LAMP.md)
