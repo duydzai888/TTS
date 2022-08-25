@@ -18,6 +18,13 @@ Nơi lưu giữ những tài liệu của các công việc được giao tại 
 [8. Cấu hình VLAN, Trunk](CCNA/8.Cau_hinh_VLAN-trunk.md)
 
 [9. Định tuyến giữa các VLAN](CCNA/9.Dinh_tuyen_giua_cac_VLAN.md)
+
+[10. Giao thức chống loop STP](CCNA/10.Giao_thuc_chong_loop_stp.md)
+
+[11. Công nghệ Ether Channel](CCNA/11.Cong_nghe_Ether_Channel.md)
+
+[12. Tìm hiểu giao thức HSRP](CCNA/12.Tim_hieu_giao_thuc_HSRP.md)
+
 ## Centos7
 
 [1. Cài đặt LAMP](https://github.com/duylk208/TTS/blob/main/Centos7/Cai_dat_LAMP.md)
