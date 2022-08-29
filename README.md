@@ -25,6 +25,7 @@ Nơi lưu giữ những tài liệu của các công việc được giao tại 
 
 [12. Tìm hiểu giao thức HSRP](CCNA/12.Tim_hieu_giao_thuc_HSRP.md)
 
+[13. Port Security](CCNA/13.Port_Security.md)
 ## Centos7
 
 [1. Cài đặt LAMP](https://github.com/duylk208/TTS/blob/main/Centos7/Cai_dat_LAMP.md)
