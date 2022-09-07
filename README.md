@@ -29,7 +29,7 @@ Nơi lưu giữ những tài liệu của các công việc được giao tại 
 
 [14. Access Control List](CCNA/14.Access_Control_List.md)
 
-[15. Network Address Translation](CCNA/15.Network%20Address%20Translation.md)
+[15. Network Address Translation](CCNA/15.Network_Address_Translation.md)
 ## Centos7
 
 [1. Cài đặt LAMP](https://github.com/duylk208/TTS/blob/main/Centos7/Cai_dat_LAMP.md)
