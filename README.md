@@ -26,6 +26,8 @@ Nơi lưu giữ những tài liệu của các công việc được giao tại 
 [12. Tìm hiểu giao thức HSRP](CCNA/12.Tim_hieu_giao_thuc_HSRP.md)
 
 [13. Port Security](CCNA/13.Port_Security.md)
+
+[14. Access Control List](CCNA/14.Access_Control_List.md)
 ## Centos7
 
 [1. Cài đặt LAMP](https://github.com/duylk208/TTS/blob/main/Centos7/Cai_dat_LAMP.md)
@@ -35,6 +37,8 @@ Nơi lưu giữ những tài liệu của các công việc được giao tại 
 [3. Cài đặt Wordpress 2 node](https://github.com/duylk208/TTS/blob/main/Centos7/Cai_wordpress_2node.md)
 
 [4. Cấu hình IP tĩnh](https://github.com/duylk208/TTS/blob/main/Centos7/Cau_hinh_IP_tinh.md)
+
+
 
 [5. Cài đặt FTP](https://github.com/duylk208/TTS/blob/main/Centos7/FTP.md)
 
