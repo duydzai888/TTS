@@ -32,6 +32,10 @@ Nơi lưu giữ những tài liệu của các công việc được giao tại 
 [15. Network Address Translation](CCNA/15.Network_Address_Translation.md)
 
 [16. Giới thiệu công nghệ WAN](CCNA/16.Gioi_thieu_cong_nghe_WAN.md)
+
+[17. Chuyên đề PPPOE](CCNA/17.Chuyen_de_PPPOE.md)
+
+[18. Cơ chế xác thực AAA](CCNA/18.Co_che_xac_thuc_AAA.md)
 ## Centos7
 
 [1. Cài đặt LAMP](https://github.com/duylk208/TTS/blob/main/Centos7/Cai_dat_LAMP.md)
