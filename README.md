@@ -36,6 +36,11 @@ Nơi lưu giữ những tài liệu của các công việc được giao tại 
 [17. Chuyên đề PPPOE](CCNA/17.Chuyen_de_PPPOE.md)
 
 [18. Cơ chế xác thực AAA](CCNA/18.Co_che_xac_thuc_AAA.md)
+
+[19. Kỹ thuật Sumary](CCNA/19.Ky_Thuat_Sumary.md)
+
+[20. Cable](CCNA/20.Cable.md)
+
 ## Centos7
 
 [1. Cài đặt LAMP](https://github.com/duylk208/TTS/blob/main/Centos7/Cai_dat_LAMP.md)
